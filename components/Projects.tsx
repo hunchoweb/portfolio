@@ -49,17 +49,17 @@ function Projects({ projects }: Props) {
                 {project.title}
               </h4>
 
-            <div className="flex items-center space-x-2 justify-center">
-              {project?.technologies.map((technology) => (
-                <img className="h-10 w-10 rounded-full"
-                  key={technology._id}
-                  src={urlFor(technology.image).url()}
-                  alt=""
-                  width={10}
-                  height={10}
-                  />
-              ))}
-            </div>
+              <div className="flex items-center space-x-2 justify-center">
+                {project?.technologies.map((technology) => (
+                  <Image className="h-10 w-10 rounded-full"
+                    key={technology._id}
+                    src={urlFor(technology.image).url()}
+                    alt=""
+                    width={30}
+                    height={30}
+                    />
+                ))}
+              </div>
               <p className="text-lg text-center md:text-left">
                 {project.summary}
               </p>

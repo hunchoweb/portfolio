@@ -23,12 +23,12 @@ function Hero({ pageInfo }: Props) {
   return (
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
       <BackgroundCircles />
-      <img
+      <Image
         className="relative rounded-full h-[150px] w-[150px] sm:h-32 sm:w-32 mx-auto object-cover"
         src={urlFor(pageInfo?.heroImage).url()}
         alt=""
-        // width={150}
-        // height={150}
+        width={150}
+        height={150}
       />
       <div className="z-20 relative">
         <h2 className="tracking-[15px] text-sm uppercase text-gray-500 pb-2">
