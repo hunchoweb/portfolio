@@ -97,4 +97,4 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
     // - At most once every 10 seconds
     revalidate: 10,
   };
-};
+};  
